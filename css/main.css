@@ -3,6 +3,9 @@
 }
 body{ margin:0px 0px; }
 
+.nav-bar-blue{
+  background-color: #2D3483;
+}
 
 #hero{
   background-image:url(../assets/img/bg_gradient.png);
@@ -60,6 +63,23 @@ body{ margin:0px 0px; }
   color: #EC6773;
 }
 
+.text-light{
+  font-family: 'Nunito', sans-serif;
+  font-weight: 200;
+  color: #fff;
+}
+
+.text-light-blue{
+  font-family: 'Nunito', sans-serif;
+  font-weight: 100;
+  color: #2D3483;
+}
+
+.text-bold{
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  color: #fff;
+}
 
 .icon{
   width: 60%;
