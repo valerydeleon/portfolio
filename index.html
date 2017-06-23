@@ -7,80 +7,271 @@
     <title>Valeria de León</title>
     <!-- Estilos UIkit -->
     <link rel="stylesheet" href="css/uikit.min.css" />
+    <!-- GoogleFonts -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,800" rel="stylesheet">
     <!-- Mis Estilos -->
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
 
     <header>
-        <div class="uk-position-relative uk">
-            <div class="uk-position-top">
-                <nav class="uk-navbar-container uk-navbar-fi uk-navbar-transparent uk-light" uk-navbar>
-                    <div class="uk-navbar-left">
-                        <ul class="uk-navbar-nav">
-                            <li class="uk-active"><a href="">Services</a></li>
-                            <li class="uk-active"><a href="">Projects</a></li>
-                        </ul>
-                    </div>
-                    <div class="uk-navbar-center"
-                      <a class="uk-navbar-item uk-logo" href="#">Logo</a>
-                    </div>
-                    <div class="uk-navbar-right">
-                        <ul class="uk-navbar-nav">
-                            <li class="uk-active"><a href="">Contact Me</a></li>
-                        </ul>
-                    </div>
-                </nav>
+      <div class="uk-position-relative">
+          <div id="hero">
+              <div class="header">
+                  <div class="logo-hero uk-margin-medium-bottom">
+                      <img src="assets/img/logo_white.png" alt="">
+                  </div>
+                  <div class="uk-container uk-container-small">
+                      <h1 class="text-header"> Hi, I'm Valeria de León </h1>
+                      <h2 class="text-header" >A multidisciplinary designer, focused in UI/UX web design and passionate in product development.</h2>
+                  </div>
               </div>
-        </div>
+          </div>
+          <div class="uk-position-top">
+              <nav class="uk-navbar-container uk-navbar-transparent uk-light" uk-navbar>
+                  <div class="uk-navbar-left">
+                      <ul class="uk-navbar-nav">
+                          <li class="uk-active"><a href="#services">Services</a></li>
+                          <li class="uk-active"><a href="#projects">Projects</a></li>
+                      </ul>
+                  </div>
+                  <div class="uk-navbar-center">
+                      <a class="uk-navbar-item uk-logo" href="#">Logo</a>
+                  </div>
+                  <div class="uk-navbar-right">
+                      <ul class="uk-navbar-nav">
+                          <li class="uk-active"><a href="#contact"><button class="uk-button uk-button-default">Contact Me</button></a></li>
+                      </ul>
+                  </div>
+              </nav>
+          </div>
+      </div>
     </header>
 
-    <section class="uk-background-cover uk-height-viewport uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(assets/img/bg_gradient.png);">
-      <section class="uk-section uk-section-small uk-flex uk-flex-column uk-flex-center uk-flex-middle">
-          <div class="logo-hero uk-margin-medium-bottom">
-              <img src="assets/img/logo_blanco.png" alt="">
-          </div>
 
-          <div class="uk-text-center uk-container-small uk-text-center@s uk-text-center@m uk-text-center@l uk-text-center@xl">
-              <h1 > Hi, I'm Valeria de León </h1>
-              <h2 class="" >A multidisciplinary designer, focused in UI/UX web design and passionate in product development.</h2>
+
+
+      <!-- Start Services -->
+      <section  id="services" class="uk-section uk-section-default" style="background-color: #f5f5f5; ">
+          <h1 class="uk-heading-primary uk-text-center uk-margin-medium-bottom heading-section">Services</h1>
+          <div class="uk-container">
+              <div class="uk-grid-match uk-child-width-1-3@m uk-margin-small" uk-grid>
+
+                  <div>
+                      <div class="uk-card uk-card-hover" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+                          <div class="uk-card-media-top">
+                              <img class="icon uk-align-center uk-margin-small-bottom" src="assets/img/pencil_icon.png" alt="">
+                          </div>
+                          <div class="uk-card-body">
+                              <h3 class="uk-card-title title-text">Design</h3>
+                              <ul class="uk-list uk-margin-small">
+                                <li>UI & UX Design</li>
+                                <li>Website Development</li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div>
+                      <div class="uk-card uk-card-hover" uk-scrollspy="cls: uk-animation-slide-top; repeat: true">
+                          <div class="uk-card-media-top">
+                              <img class="icon uk-align-center uk-margin-small-bottom" src="assets/img/strategy_icon.png" alt="">
+                          </div>
+                          <div class="uk-card-body">
+                              <h3 class="uk-card-title title-text">Strategy</h3>
+                              <ul class="uk-list uk-margin-small">
+                                <li>Online Campaigns</li>
+                                <li>Marketing Campaigns</li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div>
+                      <div class="uk-card uk-card-hover" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
+                          <div class="uk-card-media-top">
+                              <img class="icon uk-align-center uk-margin-small-bottom" src="assets/img/creative_icon.png" alt="">
+                          </div>
+                          <div class="uk-card-body">
+                              <h3 class="uk-card-title title-text">Creative</h3>
+                              <ul class="uk-list uk-margin-small ">
+                                <li>Branding</li>
+                                <li>Art Direction</li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+
+              </div>
           </div>
       </section>
-    </section>
-
-    <section class="uk-section uk-section-small uk-flex uk-flex-column uk-flex-center ">
-        <section class="uk-child-width-expand@s uk-text-center uk-container-large" uk-grid>
-            <div>
-                <div class="uk-card uk-card-default uk-card-body">Item</div>
-            </div>
-            <div>
-                <div class="uk-card uk-card-default uk-card-body">Item</div>
-            </div>
-            <div>
-                <div class="uk-card uk-card-default uk-card-body">Item</div>
-            </div>
-        </section>
-    </section>
+      <!-- End Services -->
 
 
+      <!-- Start Projects -->
+      <section id="projects" class="uk-section uk-section-primary uk-preserve-color" style="background-color: #2D3483;">
+          <div class="uk-container">
+
+              <h1 class="uk-heading-primary uk-text-center uk-margin-large-bottom text-white">Projects</h1>
+
+              <div class="uk-grid-match uk-child-width-expand@m" uk-grid>
+      <!-- One --><div class="uk-margin-xlarge-bottom">
+                      <a class="link-href" href="https://valerydeleon.github.io/exRestaurantes-api/" target="_blank">
+                        <div class="uk-card uk-card-header uk-card-title uk-padding-remove-vertical">
+                            <p class="text-white">Design</p>
+                        </div>
+                        <div class="uk-card uk-card-body uk-padding-remove">
+                            <div class="uk-text-center">
+                                <div class="uk-inline-clip uk-transition-toggle">
+                                    <img src="assets/img/lugares_cool.jpg" alt="">
+                                    <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
+                                        <p class="uk-h4 uk-margin-remove">School Project - Lugares Cool</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-card uk-card-footer uk-padding-remove-vertical">
+                            <p class="text-white">App that shows cool places and their geolocation.</p>
+                        </div>
+                      </a>
+      <!-- One --></div>
+
+      <!-- Two --><div class="uk-margin-xlarge-bottom">
+                      <a class="link-href" href="https://valerydeleon.github.io/exRestaurantes-api/" target="_blank">
+                        <div class="uk-card uk-card-header uk-card-title uk-padding-remove-vertical">
+                            <p class="text-white">Strategy</p>
+                        </div>
+                        <div class="uk-card uk-card-body uk-padding-remove">
+                            <div class="uk-text-center">
+                                <div class="uk-inline-clip uk-transition-toggle">
+                                    <img src="assets/img/basf_mockup.jpg" alt="">
+                                    <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
+                                        <p class="uk-h4 uk-margin-remove">BASF The Chemical Company</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-card uk-card-footer uk-padding-remove-vertical">
+                            <p class="text-white">Repositioning strategies for the HR department.</p>
+                        </div>
+                      </a>
+      <!-- One --></div>
+
+      <!-- Tree --><div class="uk-margin-xlarge-bottom">
+                    <a class="link-href" href="https://www.behance.net/gallery/45245451/El-Brayan" target="_blank">
+                      <div class="uk-card uk-card-header uk-card-title uk-padding-remove-vertical">
+                          <p class="text-white">Creative</p>
+                      </div>
+                      <div class="uk-card uk-card-body uk-padding-remove">
+                          <div class="uk-text-center">
+                              <div class="uk-inline-clip uk-transition-toggle">
+                                  <img src="assets/img/elbrayan_logo.jpg" alt="">
+                                  <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
+                                      <p class="uk-h4 uk-margin-remove">El Brayan!</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="uk-card uk-card-footer uk-padding-remove-vertical">
+                          <p class="text-white">Personal project of freelance - Marketing and design consulting agency.</p>
+                      </div>
+                    </a>
+      <!-- Tree --></div>
+              </div>
+
+
+              <div class="uk-grid-match uk-child-width-expand@m" uk-grid>
+      <!-- Four --><div class="uk-margin-large-bottom">
+                    <a class="link-href" href="file:///Users/Valery/Desktop/laboratoria/sprint3/sprint3-proyectoVersion2/index.html" target="_blank">
+                      <div class="uk-card uk-card-header uk-card-title uk-padding-remove-vertical">
+                          <p class="text-white">Design</p>
+                      </div>
+                      <div class="uk-card uk-card-body uk-padding-remove">
+                          <div class="uk-text-center">
+                              <div class="uk-inline-clip uk-transition-toggle">
+                                  <img src="assets/img/lyft_web_mockup.jpg" alt="">
+                                  <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
+                                      <p class="uk-h4 uk-margin-remove">School Project - Lyft</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="uk-card uk-card-footer uk-padding-remove-vertical">
+                          <p class="text-white">Lyft site copy.</p>
+                      </div>
+                    </a>
+      <!-- Four --></div>
+      <!-- Five --><div class="uk-margin-large-bottom">
+                      <div class="uk-card uk-card-header uk-card-title uk-padding-remove-vertical">
+                          <p class="text-white">Strategy</p>
+                      </div>
+                      <div class="uk-card uk-card-body uk-padding-remove">
+                          <div class="uk-text-center">
+                              <div class="uk-inline-clip uk-transition-toggle">
+                                  <img src="assets/img/wyndham_chevron.jpg" alt="">
+                                  <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
+                                      <p class="uk-h4 uk-margin-remove">Wyndham Hotel Group</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="uk-card uk-card-footer uk-padding-remove-vertical">
+                          <p class="text-white">Media planning and creative strategies.</p>
+                      </div>
+      <!-- Five --></div>
+      <!-- Six --><div class="uk-margin-large-bottom">
+                    <a class="link-href" href="https://www.behance.net/gallery/45253001/medical-illustration" target="_blank">
+                      <div class="uk-card uk-card-header uk-card-title uk-padding-remove-vertical">
+                          <p class="text-white">Creative</p>
+                      </div>
+                      <div class="uk-card uk-card-body uk-padding-remove">
+                          <div class="uk-text-center">
+                              <div class="uk-inline-clip uk-transition-toggle">
+                                  <img src="assets/img/ilustracion.jpg" alt="">
+                                  <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
+                                      <p class="uk-h4 uk-margin-remove">Editorial Médica Panamericana</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="uk-card uk-card-footer uk-padding-remove-vertical">
+                          <p class="text-white">Development of illustrations for medical book.</p>
+                      </div>
+                    </a>
+      <!-- Six --></div>
+              </div>
+
+          </div>
+      </section>
+      <!-- End Projects -->
 
 
 
-
-
-    <div id="content">
-    <h2> If nothing goes right for you , go left.</h2>
-    <p> Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. </p>
-  </div>
-  <div id="footer">
-    <p> I am the footer, and you have scroll down to see me.</p>
-  </div>
-</div>
-
-
-
-
-
+      <footer id="contact" class="uk-section uk-section-primary uk-preserve-color" style="background-color: #f5f5f5; " >
+          <sectionclass="uk-container uk-container-small">
+              <h1 class="uk-heading-primary uk-text-center heading-section">Contact</h1>
+              <div class="uk-grid-match uk-text-center uk-child-width-1-5@m" uk-grid>
+                  <div class="uk-dark">
+                     <a href="https://www.behance.net/Valerydeleon" target="_blank" class="uk-icon-link " uk-icon="icon: behance; ratio: 2"></a>
+                  </div>
+                  <div>
+                     <a href="https://www.linkedin.com/in/valeriadeleong/" target="_blank" class="uk-icon-link " uk-icon="icon: linkedin; ratio: 2"></a>
+                  </div>
+                  <div>
+                     <a href="https://github.com/valerydeleon" target="_blank" class="uk-icon-link " uk-icon="icon: github-alt; ratio: 2"></a>
+                  </div>
+                  <div>
+                     <a href="mailto:valery.deleon@gmail.com" class="uk-icon-link " uk-icon="icon: mail; ratio: 2" title="email me"></a>
+                  </div>
+                  <div>
+                     <a class="uk-icon-link " uk-icon="icon: phone; ratio: 2" href="tel:5543656168" ></a>
+                  </div>
+              </div>
+              <div>
+                <p id="copy-right" class="uk-text-center heading-section uk-margin-medium-top " >© Valeria de León - 2017</p>
+              </div>
+          </section>
+      </footer>
 
 
     <!-- js UIkit -->
