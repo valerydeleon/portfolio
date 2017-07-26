@@ -8,9 +8,10 @@
     <!-- Estilos UIkit -->
     <link rel="stylesheet" href="css/uikit.min.css" />
     <!-- GoogleFonts -->
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,800,900" rel="stylesheet">
     <!-- Mis Estilos -->
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/modals.css">
   </head>
   <body>
 
@@ -27,19 +28,19 @@
               </div>
           </div>
           <div class="uk-position-top">
-              <nav id="nav-bar" class="uk-navbar-container uk-navbar-transparent uk-light" uk-navbar uk-sticky uk-toggle="target: #toggle-custom; cls: uk-card-primary">
+              <nav id="nav-bar" class="uk-navbar-container uk-navbar-transparent" uk-navbar uk-sticky uk-toggle="target: #toggle-custom; cls: uk-card-primary">
                   <div class="uk-navbar-left">
                       <ul class="uk-navbar-nav">
-                          <li class="uk-active"><a href="#services">Services</a></li>
-                          <li class="uk-active"><a href="#projects">Projects</a></li>
+                          <li class="uk-active text-white"><a class="enlace" href="#services">Services</a></li>
+                          <li class="uk-active text-white"><a href="#projects">Projects</a></li>
                       </ul>
                   </div>
                   <div class="uk-navbar-center">
-                      <a class="uk-navbar-item uk-logo" href="#">Logo</a>
+                      <!-- <a class="uk-navbar-item uk-logo" href="#">Logo</a> -->
                   </div>
                   <div class="uk-navbar-right">
                       <ul class="uk-navbar-nav">
-                          <li class="uk-active"><a href="#contact"><button class="uk-button uk-button-default">Contact Me</button></a></li>
+                          <li class="uk-active"><a href="#contact"><button class="uk-button uk-button-default text-white">Contact Me</button></a></li>
                       </ul>
                   </div>
               </nav>
@@ -56,7 +57,7 @@
               <div class="uk-grid-match uk-child-width-1-3@m uk-margin-small" uk-grid>
 
                   <div>
-                      <div class="uk-card uk-card-hover" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+                      <div class="uk-card" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
                           <div class="uk-card-media-top">
                               <img class="icon uk-align-center uk-margin-small-bottom" src="assets/img/pencil_icon.png" alt="">
                           </div>
@@ -71,7 +72,7 @@
                   </div>
 
                   <div>
-                      <div class="uk-card uk-card-hover" uk-scrollspy="cls: uk-animation-slide-top; repeat: true">
+                      <div class="uk-card" uk-scrollspy="cls: uk-animation-slide-top; repeat: true">
                           <div class="uk-card-media-top">
                               <img class="icon uk-align-center uk-margin-small-bottom" src="assets/img/strategy_icon.png" alt="">
                           </div>
@@ -86,7 +87,7 @@
                   </div>
 
                   <div>
-                      <div class="uk-card uk-card-hover" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
+                      <div class="uk-card" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
                           <div class="uk-card-media-top">
                               <img class="icon uk-align-center uk-margin-small-bottom" src="assets/img/creative_icon.png" alt="">
                           </div>
@@ -113,15 +114,17 @@
               <h1 class="uk-heading-primary uk-text-center uk-margin-large-bottom text-white">Projects</h1>
 
               <div class="uk-grid-match uk-child-width-expand@m" uk-grid>
+
       <!-- One --><div class="uk-margin-xlarge-bottom">
-                      <a class="link-href" href="https://valerydeleon.github.io/exRestaurantes-api/" target="_blank">
+                        <a class="link-href" href="#modal-overflow-lugaresCool" uk-toggle>
+                      <!-- <a class="link-href" href="https://valerydeleon.github.io/exRestaurantes-api/" target="_blank"> -->
                         <div class="uk-card uk-card-header uk-card-title uk-padding-remove-vertical">
                             <p class="text-white">Design</p>
                         </div>
                         <div class="uk-card uk-card-body uk-padding-remove">
                             <div class="uk-text-center">
                                 <div class="uk-inline-clip uk-transition-toggle">
-                                    <img src="assets/img/lugares_cool.jpg" alt="">
+                                    <img src="assets/img/cool-places/lugares_cool.jpg" alt="">
                                     <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
                                         <p class="uk-h4 uk-margin-remove">School Project - Lugares Cool</p>
                                     </div>
@@ -134,15 +137,59 @@
                       </a>
       <!-- One --></div>
 
+
+      <!-- Inicia Modal One -->
+      <!-- <a class="uk-button uk-button-default" href="#modal-overflow" uk-toggle>Open</a> -->
+      <div id="modal-overflow-lugaresCool" uk-modal>
+          <div class="uk-modal-dialog">
+
+              <button class="uk-modal-close-default close-overflow" type="button" uk-close></button>
+      <!-- header modal -->
+              <div class="uk-modal-header uk-text-center">
+                  <h2 class="uk-modal-title uk-text-bold">Lugares Cool</h2>
+                  <p class="uk-text-lead">App that shows cool places and their geolocation.</p>
+                  <ul class="uk-text-small uk-align-center container-list">
+                      <li class="uk-text-uppercase info-list-style">role <span class="uk-text-bold uk-text-capitalize">developer<span></span></span></li>
+                      <li class="uk-text-uppercase info-list-style">context <span class="uk-text-bold uk-text-capitalize">school project<span></span></span></li>
+                      <li class="uk-text-uppercase info-list-style">date <span class="uk-text-bold uk-text-capitalize">june 17<span></span></span></li>
+                      <li class="uk-text-uppercase">platform <span class="uk-text-bold uk-text-capitalize">responsive<span></span></span></li>
+                  </ul>
+              </div>
+      <!-- body modal -->
+              <div class="uk-modal-body" uk-overflow-auto>
+                <img src="assets/img/cool-places/responsive_coolPlaces.png" alt="">
+              </div>
+      <!-- footer modal -->
+              <div class="uk-modal-footer uk-text-center">
+                <h4 class="modal-title">Tools & Skills</h4>
+                <div class="">
+                    <ul class="uk-text-small uk-align-center container-list">
+                        <li class="uk-text-uppercase uk-text-small">Apis</li>
+                        <li class="uk-text-uppercase uk-text-small">Js</li>
+                        <li class="uk-text-uppercase uk-text-small">CSS3</li>
+                        <li class="uk-text-uppercase uk-text-small">HTML5</li>
+                        <li class="uk-text-uppercase uk-text-small">boostrap</li>
+                    </ul>
+                </div>
+                <a class="link-href" href="https://valerydeleon.github.io/exRestaurantes-api/" target="_blank"><button class="uk-button uk-button-default content-button" type="button"><span class="uk-margin-small-right" uk-icon="icon: link; ratio: 1.5"></span>Go to page</button></a>
+              </div>
+
+          </div>
+      </div>
+      <!-- Termina Modal One -->
+
+
+
       <!-- Two --><div class="uk-margin-xlarge-bottom">
-                      <a class="link-href" href="https://valerydeleon.github.io/exRestaurantes-api/" target="_blank">
+                      <a class="link-href" href="#modal-full-basf" uk-toggle>
+                      <!-- <a class="link-href" href="https://valerydeleon.github.io/exRestaurantes-api/" target="_blank"> -->
                         <div class="uk-card uk-card-header uk-card-title uk-padding-remove-vertical">
                             <p class="text-white">Strategy</p>
                         </div>
                         <div class="uk-card uk-card-body uk-padding-remove">
                             <div class="uk-text-center">
                                 <div class="uk-inline-clip uk-transition-toggle">
-                                    <img src="assets/img/basf_mockup.jpg" alt="">
+                                    <img src="assets/img/basf/basf_logo.jpg" alt="">
                                     <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
                                         <p class="uk-h4 uk-margin-remove">BASF The Chemical Company</p>
                                     </div>
@@ -153,10 +200,58 @@
                             <p class="text-light">Repositioning strategies for the HR department.</p>
                         </div>
                       </a>
-      <!-- One --></div>
+      <!-- two --></div>
+
+      <!-- Inicia Modal Two -->
+      <!-- <a class="uk-button uk-button-default" href="#modal-full" uk-toggle>Open</a> -->
+      <div id="modal-full-basf" class="uk-modal-full" uk-modal>
+          <div class="uk-modal-dialog">
+              <button class="uk-modal-close-full uk-close-large close-full" type="button" uk-close></button>
+              <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+                  <div class="uk-background-cover modal-full-bg uk-align-center" uk-height-viewport>
+                      <img class="modal-full-img" src="assets/img/basf/basf_mockup.jpg" alt="">
+                  </div>
+                  <div class="uk-padding-large">
+                      <div class="modal-full-header uk-text-center">
+                          <h2 class="uk-modal-title uk-text-bold modal-full-title">BASF The Chemical Company</h2>
+                          <p class="uk-text-lead modal-full-text-lead">Repositioning strategies for the HR department.</p>
+                          <ul class="uk-text-small uk-align-center container-list">
+                              <li class="uk-text-uppercase info-list-style modal-full-list">role <span class="uk-text-bold uk-text-capitalize">designer, Marketer and Communicator.<span></span></span></li>
+                              <li class="uk-text-uppercase info-list-style modal-full-list">context <span class="uk-text-bold uk-text-capitalize">side project<span></span></span></li>
+                              <li class="uk-text-uppercase info-list-style modal-full-list">date <span class="uk-text-bold uk-text-capitalize">january 13<span></span></span></li>
+                              <li class="uk-text-uppercase modal-full-list">format <span class="uk-text-bold uk-text-capitalize">print & digital<span></span></span></li>
+                          </ul>
+                      </div>
+
+                      <div class="uk-text-center">
+                          <h4 class="modal-title modal-full-subtitle">Tools & Skills</h4>
+                          <div class="">
+                              <ul class="uk-text-small uk-align-center container-list">
+                                  <li class="uk-text-uppercase modal-full-list-skills">Branding</li>
+                                  <li class="uk-text-uppercase modal-full-list-skills">Design</li>
+                                  <li class="uk-text-uppercase modal-full-list-skills">Marketing</li>
+                                  <li class="uk-text-uppercase modal-full-list-skills">strategy</li>
+                                  <li class="uk-text-uppercase modal-full-list-skills">Communication</li>
+                                  <li class="uk-text-uppercase modal-full-list-skills">PR</li>
+                                  <li class="uk-text-uppercase uk-text-small">Project management</li>
+                                  <li class="uk-text-uppercase modal-full-list-skills">Illustrator</li>
+                                  <li class="uk-text-uppercase modal-full-list-skills">photoshop</li>
+                                  <li class="uk-text-uppercase modal-full-list-skills">indesign</li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- Termina Modal Two-->
+
+
+
 
       <!-- Tree --><div class="uk-margin-xlarge-bottom">
-                    <a class="link-href" href="https://www.behance.net/gallery/45245451/El-Brayan" target="_blank">
+                      <a class="link-href" href="#modal-overflow-el-brayan" uk-toggle>
+                      <!-- <a class="link-href" href="https://www.behance.net/gallery/45245451/El-Brayan" target="_blank"> -->
                       <div class="uk-card uk-card-header uk-card-title uk-padding-remove-vertical">
                           <p class="text-white">Creative</p>
                       </div>
@@ -171,23 +266,62 @@
                           </div>
                       </div>
                       <div class="uk-card uk-card-footer uk-padding-remove-vertical">
-                          <p class="text-light">Personal project of freelance - Marketing and design consulting agency.</p>
+                          <p class="text-light">Personal project - Marketing and design consulting agency.</p>
                       </div>
                     </a>
       <!-- Tree --></div>
+
+      <!-- Inicia Modal Tree -->
+      <!-- <a class="uk-button uk-button-default" href="#modal-overflow" uk-toggle>Open</a> -->
+      <div id="modal-overflow-el-brayan" uk-modal>
+          <div class="uk-modal-dialog">
+
+              <button class="uk-modal-close-default close-overflow" type="button" uk-close></button>
+      <!-- header modal -->
+              <div class="uk-modal-header uk-text-center">
+                  <h2 class="uk-modal-title uk-text-bold">El Brayan!</h2>
+                  <p class="uk-text-lead">Marketing and design consulting agency.</p>
+                  <ul class="uk-text-small uk-align-center container-list">
+                      <li class="uk-text-uppercase info-list-style">role <span class="uk-text-bold uk-text-capitalize">founder<span></span></span></li>
+                      <li class="uk-text-uppercase info-list-style">context <span class="uk-text-bold uk-text-capitalize">freelance<span></span></span></li>
+                      <li class="uk-text-uppercase info-list-style">date <span class="uk-text-bold uk-text-capitalize">april 16<span></span></span></li>                  </ul>
               </div>
+      <!-- body modal -->
+              <div class="uk-modal-body" uk-overflow-auto>
+                <img src="assets/img/elbrayan/branding_brayan.jpg" alt="">
+              </div>
+      <!-- footer modal -->
+              <div class="uk-modal-footer uk-text-center">
+                <h4 class="modal-title">Tools & Skills</h4>
+                <div class="">
+                    <ul class="uk-text-small uk-align-center container-list">
+                        <li class="uk-text-uppercase uk-text-small">Branding</li>
+                        <li class="uk-text-uppercase uk-text-small">Design</li>
+                        <li class="uk-text-uppercase uk-text-small">Communication</li>
+                        <li class="uk-text-uppercase uk-text-small">Illustrator</li>
+                        <li class="uk-text-uppercase uk-text-small">Photoshop</li>
+                    </ul>
+                </div>
+              </div>
+
+          </div>
+      </div>
+      <!-- Termina Modal Tree-->
+              </div>
+
 
 
               <div class="uk-grid-match uk-child-width-expand@m" uk-grid>
       <!-- Four --><div class="uk-margin-large-bottom">
-                    <a class="link-href" href="https://valerydeleon.github.io/sprint3-proyectoVersion2/index.html" target="_blank">
+                    <a class="link-href" href="#modal-overflow-lyft" uk-toggle>
+                    <!-- <a class="link-href" href="https://valerydeleon.github.io/sprint3-proyectoVersion2/index.html" target="_blank"> -->
                       <div class="uk-card uk-card-header uk-card-title uk-padding-remove-vertical">
                           <p class="text-white">Design</p>
                       </div>
                       <div class="uk-card uk-card-body uk-padding-remove">
                           <div class="uk-text-center">
                               <div class="uk-inline-clip uk-transition-toggle">
-                                  <img src="assets/img/lyft_web_mockup.jpg" alt="">
+                                  <img src="assets/img/lyft/lyft_web_mockup.jpg" alt="">
                                   <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
                                       <p class="uk-h4 uk-margin-remove">School Project - Lyft</p>
                                   </div>
@@ -199,6 +333,49 @@
                       </div>
                     </a>
       <!-- Four --></div>
+
+      <!-- Inicia Modal Four -->
+      <!-- <a class="uk-button uk-button-default" href="#modal-overflow" uk-toggle>Open</a> -->
+      <div id="modal-overflow-lyft" uk-modal>
+          <div class="uk-modal-dialog">
+
+              <button class="uk-modal-close-default close-overflow" type="button" uk-close></button>
+      <!-- header modal -->
+              <div class="uk-modal-header uk-text-center">
+                  <h2 class="uk-modal-title uk-text-bold">Lyft Web</h2>
+                  <p class="uk-text-lead">Lyft website copy.</p>
+                  <ul class="uk-text-small uk-align-center container-list">
+                      <li class="uk-text-uppercase info-list-style">role <span class="uk-text-bold uk-text-capitalize">collaborative developer<span></span></span></li>
+                      <li class="uk-text-uppercase info-list-style">context <span class="uk-text-bold uk-text-capitalize">school project<span></span></span></li>
+                      <li class="uk-text-uppercase info-list-style">date <span class="uk-text-bold uk-text-capitalize">june 17<span></span></span></li>
+                      <li class="uk-text-uppercase">platform <span class="uk-text-bold uk-text-capitalize">desktop<span></span></span></li>
+                  </ul>
+              </div>
+      <!-- body modal -->
+              <div class="uk-modal-body" uk-overflow-auto>
+                <img src="assets/img/lyft/lyft_web.png" alt="">
+              </div>
+      <!-- footer modal -->
+              <div class="uk-modal-footer uk-text-center">
+                <h4 class="modal-title">Tools & Skills</h4>
+                <div class="">
+                    <ul class="uk-text-small uk-align-center container-list">
+                        <li class="uk-text-uppercase uk-text-small">css3</li>
+                        <li class="uk-text-uppercase uk-text-small">HTML5</li>
+                        <li class="uk-text-uppercase uk-text-small">js</li>
+                        <li class="uk-text-uppercase uk-text-small">collaborative github</li>
+                    </ul>
+                </div>
+                <!-- <a class="link-href" href="https://valerydeleon.github.io/exRestaurantes-api/" target="_blank"><button class="uk-button uk-button-default content-button" type="button"><span class="uk-margin-small-right" uk-icon="icon: link; ratio: 1.5"></span>Go to page</button></a> -->
+              </div>
+
+          </div>
+      </div>
+      <!-- Termina Modal Four -->
+
+
+
+
       <!-- Five --><div class="uk-margin-large-bottom">
                       <div class="uk-card uk-card-header uk-card-title uk-padding-remove-vertical">
                           <p class="text-white">Strategy</p>
@@ -218,7 +395,8 @@
                       </div>
       <!-- Five --></div>
       <!-- Six --><div class="uk-margin-large-bottom">
-                    <a class="link-href" href="https://www.behance.net/gallery/45253001/medical-illustration" target="_blank">
+                    <a class="link-href" href="#modal-overflow-illustration" uk-toggle>
+                    <!-- <a class="link-href" href="https://www.behance.net/gallery/45253001/medical-illustration" target="_blank"> -->
                       <div class="uk-card uk-card-header uk-card-title uk-padding-remove-vertical">
                           <p class="text-white">Creative</p>
                       </div>
@@ -237,6 +415,52 @@
                       </div>
                     </a>
       <!-- Six --></div>
+
+      <!-- Inicia Modal six -->
+      <!-- <a class="uk-button uk-button-default" href="#modal-overflow" uk-toggle>Open</a> -->
+      <div id="modal-overflow-illustration" uk-modal>
+          <div class="uk-modal-dialog">
+
+              <button class="uk-modal-close-default close-overflow" type="button" uk-close></button>
+      <!-- header modal -->
+              <div class="uk-modal-header uk-text-center">
+                  <h2 class="uk-modal-title uk-text-bold">Editorial Médica Panamericana</h2>
+                  <p class="uk-text-lead">Development of illustrations for medical book.</p>
+                  <ul class="uk-text-small uk-align-center container-list">
+                      <li class="uk-text-uppercase info-list-style">role <span class="uk-text-bold uk-text-capitalize">rt director & illustrator<span></span></span></li>
+                      <li class="uk-text-uppercase info-list-style">context <span class="uk-text-bold uk-text-capitalize">side project<span></span></span></li>
+                      <li class="uk-text-uppercase info-list-style">date <span class="uk-text-bold uk-text-capitalize">2009<span></span></span></li>
+                      <li class="uk-text-uppercase">format <span class="uk-text-bold uk-text-capitalize">digital & print<span></span></span></li>
+                  </ul>
+              </div>
+      <!-- body modal -->
+              <div class="uk-modal-body" uk-overflow-auto>
+                <img src="assets/img/illustration/collage_ilustration.jpg" alt="">
+                <img src="assets/img/illustration/heart.jpg" alt="">
+                <img src="assets/img/illustration/ear.jpg" alt="">
+                <img src="assets/img/illustration/bone.jpg" alt="">
+                <img src="assets/img/illustration/stomach.jpg" alt="">
+                <img src="assets/img/illustration/epitellus.jpg" alt="">
+                <img src="assets/img/illustration/digestive_system.jpg" alt="">
+                <img src="assets/img/illustration/veins.jpg" alt="">
+                <img src="assets/img/illustration/nerves.jpg" alt="">
+              </div>
+      <!-- footer modal -->
+              <div class="uk-modal-footer uk-text-center">
+                <h4 class="modal-title">Tools & Skills</h4>
+                <div class="">
+                    <ul class="uk-text-small uk-align-center container-list">
+                        <li class="uk-text-uppercase uk-text-small">illustrator</li>
+                        <li class="uk-text-uppercase uk-text-small">photoshop</li>
+                        <li class="uk-text-uppercase uk-text-small">Project management</li>
+                    </ul>
+                </div>
+                <!-- <a class="link-href" href="https://valerydeleon.github.io/exRestaurantes-api/" target="_blank"><button class="uk-button uk-button-default content-button" type="button"><span class="uk-margin-small-right" uk-icon="icon: link; ratio: 1.5"></span>Go to page</button></a> -->
+              </div>
+
+          </div>
+      </div>
+      <!-- Termina Modal six -->
               </div>
 
           </div>
@@ -251,18 +475,23 @@
               <div class="uk-grid-match uk-text-center uk-child-width-1-5@m" uk-grid>
                   <div class="uk-dark">
                      <a href="https://www.behance.net/Valerydeleon" target="_blank" class="uk-icon-link " uk-icon="icon: behance; ratio: 2"></a>
+                     <span>Behance</span>
                   </div>
                   <div>
                      <a href="https://www.linkedin.com/in/valeriadeleong/" target="_blank" class="uk-icon-link " uk-icon="icon: linkedin; ratio: 2"></a>
+                     <span>Linkedin</span>
                   </div>
                   <div>
                      <a href="https://github.com/valerydeleon" target="_blank" class="uk-icon-link " uk-icon="icon: github-alt; ratio: 2"></a>
+                     <span>GitHub</span>
                   </div>
                   <div>
                      <a href="mailto:valery.deleon@gmail.com" class="uk-icon-link " uk-icon="icon: mail; ratio: 2" title="email me"></a>
+                     <span>valery.deleon@gmail.com</span>
                   </div>
                   <div>
                      <a class="uk-icon-link " uk-icon="icon: phone; ratio: 2" href="tel:5543656168" ></a>
+                     <span>55.43.65.61.68</span>
                   </div>
               </div>
               <div>

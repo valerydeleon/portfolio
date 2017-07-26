@@ -1,3 +1,10 @@
+.uk-navbar-nav>li.uk-active..text-blue>a{
+    color: #2D3483;
+}
+.uk-navbar-nav>li.uk-active.text-white>a{
+    color: #e3e3e3;
+}
+
 *, body{
   font-family: 'Nunito', sans-serif;
 }

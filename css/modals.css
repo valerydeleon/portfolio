@@ -1,0 +1,147 @@
+.uk-modal-header{
+  background-color: #EC6773;
+}
+.close-overflow.uk-close{
+  color: white;
+}
+.uk-close:hover{
+  color: white;
+}
+
+.close-full.uk-close{
+  color: #2D3483;
+}
+.uk-close:hover{
+  color: #2D3483;
+}
+
+.container-list{
+  background-color: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+h2.uk-modal-title.uk-text-bold{
+  font-family: 'Nunito', sans-serif;
+  color: white;
+  margin-bottom: 5px;
+}
+
+p.uk-text-lead{
+  font-family: 'Nunito', sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+li.uk-text-uppercase.info-list-style{
+  display: inline-block;
+  margin-right: 30px;
+  margin-top: 0px;
+  list-style: none;
+  font-size: .8em;
+  font-weight: 200;
+  color: white;
+}
+
+li.uk-text-uppercase{
+  display: inline-block;
+  padding: 10px 0;
+  list-style: none;
+  font-size: .8em;
+  font-weight: 200;
+  color: white;
+}
+
+.uk-text-uppercase.uk-text-small{
+  border: none;
+  padding: 15px 10px;
+  color: #2D3483;
+  font-weight: 600;
+  cursor: auto;
+}
+
+.uk-h4, h4.modal-title{
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  color: #2D3483;
+  margin: 0px;
+}
+
+.uk-button-default.content-button{
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  color: #2D3483;
+  margin-top: 0px;
+  margin-bottom: 2px;
+}
+
+
+
+
+
+.modal-full-bg{
+  background-color: #2D3483;
+}
+
+img.modal-full-img{
+  margin-top: 5vh;
+}
+
+.modal-full-header{
+
+}
+
+h2.uk-modal-title.uk-text-bold.modal-full-title{
+  font-family: 'Nunito', sans-serif;
+  font-size: 3em;
+  color: #2D3483;
+  margin-bottom: 5px;
+}
+
+p.uk-text-lead.modal-full-text-lead{
+  font-family: 'Nunito', sans-serif;
+  font-weight: 300;
+  font-size: 1.3em;
+  color: #2D3483;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+li.uk-text-uppercase.info-list-style.modal-full-list{
+  display: inline-block;
+  margin-right: 30px;
+  margin-top: 0px;
+  list-style: none;
+  font-size: 1em;
+  font-weight: 200;
+  color: #2D3483;
+}
+
+li.uk-text-uppercase.modal-full-list{
+  display: inline-block;
+  padding: 10px 0;
+  list-style: none;
+  font-size: 1em;
+  font-weight: 200;
+  color: #2D3483;
+}
+
+.uk-text-uppercase.modal-full-list-skills{
+  border: none;
+  padding: 15px 10px;
+  color: #2D3483;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: auto;
+}
+
+.uk-h4, h4.modal-full-subtitle{
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  font-size: 1.5em;
+  color: #2D3483;
+  margin-top: 40px;
+}
