@@ -9,39 +9,30 @@ body{
   margin:0px 0px;
 }
 
-header{
-  position: fixed;
-  z-index: 1;
-  width: 100%;
-  height: 100px;
-  background-color: rgba(255, 255, 255, 0);
-}
-
-header.nav-bar-left{
-  float: left;
-}
-
-header>div>a{
-  float: left;
-}
-
-a.uk-icon{
+.uk-navbar-nav>li>a{
   color: #e3e3e3;
-  float: right;
-  padding: 20px;
+}
+.uk-navbar-nav>li>a:hover{
+  color: #e3e3e3;
+}
+.text-white{
+  color: #e3e3e3;
+}
+.text-white:hover{
+  color: #e3e3e3;
 }
 
-li.nav-bar-right.nav-button{
-  float: right;
-  margin-right: 110px;
+.bg-gradient{
+  background-image:url(../assets/img/bg_gradient.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-nav>ul>li{
-  display: inline-block;
-  width: 90px;
-  line-height: 100px;
+span.uk-navbar-toggle-icon.uk-icon{
+  color: #e3e3e3;
 }
-nav>ul>li>a{
+span.uk-margin-small-right{
   color: #e3e3e3;
 }
 
@@ -52,9 +43,6 @@ button#nav-button{
   color:  #e3e3e3;
 }
 
-.nav-bar-blue{
-  background-color: #2D3483;
-}
 
 img.hero-logo{
   margin-top: 0px;
@@ -127,6 +115,10 @@ h1.uk-heading-primary.uk-text-center.heading-section{
   margin-top: 20px;
 }
 
+.logo-small{
+  width: 30px;
+}
+
 .logo-hero{
   margin: 0 auto;
   text-align: center;
@@ -177,9 +169,11 @@ h1.uk-heading-primary.uk-text-center.heading-section{
 
 .icon{
   width: 50%;
-
 }
-
+a.uk-icon{
+  float: none;
+  padding-top: 40px;
+}
 .link-href:hover{
   text-decoration: none;
 }

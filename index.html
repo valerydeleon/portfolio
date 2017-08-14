@@ -5,6 +5,7 @@
     <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Valeria de León</title>
+    <link rel="shortcut icon" href="assets/img/favicon-96x96.png" type="image/x-icon">
     <!-- Estilos UIkit -->
     <link rel="stylesheet" href="css/uikit.min.css" />
     <!-- GoogleFonts -->
@@ -15,49 +16,44 @@
   </head>
   <body>
 
-    <header id="nav-container">
-
-      <!-- <div class="uk-offcanvas-content">
-          <button uk-navbar-toggle-icon uk-toggle="target: #offcanvas-nav; mode: media; media: @1"><span class="uk-margin-small-right">Menu</span></button>
-          <div id="offcanvas-nav" uk-offcanvas="flip: true">
-              <div class="uk-offcanvas-bar">
-                <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
-                  <li class="uk-active" ><a href="#">SERVICES</a></li>
-                  <li class="uk-active"><a href="#">PROJECTS</a></li>
-                  <li class="uk-active"><a href="#">CONTACT ME</a></li>
+    <!-- start desktop menu -->
+    <header  class="uk-position-top">
+        <nav id="nav-container" class="uk-margin" uk-navbar="mode: click" uk-sticky="bottom: #offset">
+            <a href="#" class="uk-button uk-hidden@m uk-visible@xs" uk-toggle="target: #offcanvas-nav">
+                <span  id="nav-mobile-icon" uk-navbar-toggle-icon></span>
+                <span id="nav-mobile-text" class="uk-margin-small-right">MENÚ</span>
+            </a>
+            <!-- <div class="uk-panel uk-padding-small hide-mobile logo-small">
+               <a class="uk-navbar-item uk-logo" href="#"><img src="assets/img/logo_color.png" alt="logo_color"></a>
+            </div> -->
+            <div class="uk-navbar-left uk-visible@m">
+                <ul class="uk-navbar-nav">
+                    <li  class="nav-link nav-bar-left"><a id="nav-link-services" class="text-white" href="#services">Services</a></li>
+                    <li  class="nav-link nav-bar-left"><a id="nav-link-projects" class="text-white" href="#projects">Projects</a></li>
                 </ul>
-              </div>
-          </div>
-      </div> -->
-
-      <nav>
-        <ul>
-          <li class="nav-bar-left "><a id="nav-link-services" href="#services">SERVICES</a></li>
-          <li class="nav-bar-left "><a id="nav-link-projects"href="#projects">PROJECTS</a></li>
-          <li class="nav-bar-right nav-button"><a href="#contact"><button id="nav-button" class="uk-button">Contact Me</button></a></li>
-        </ul>
-      </nav>
-
-
-          <!-- <div class="uk-position-top">
-              <nav id="nav-container" class="uk-navbar-container uk-navbar-transparent text-blue" uk-navbar uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky;">
-                  <div class="uk-navbar-left">
-                      <ul class="uk-navbar-nav">
-                          <li class="nav-link"><a href="#services">Services</a></li>
-                          <li class="nav-link"><a href="#projects">Projects</a></li>
-                      </ul>
-                  </div>
-                  <div class="uk-navbar-center">
-                       <a class="uk-navbar-item uk-logo" href="#">Logo</a>
-                  </div>
-                  <div class="uk-navbar-right">
-                      <ul class="uk-navbar-nav">
-                          <li><a href="#contact"><button id="nav-button" class="uk-button uk-button-default text-white">Contact Me</button></a></li>
-                      </ul>
-                  </div>
-              </nav>
-          </div> -->
+            </div>
+            <div class="uk-navbar-right uk-visible@m">
+                <ul class="uk-navbar-nav">
+                    <li><a href="#contact"><button id="nav-button" class="uk-button uk-button-default text-white">Contact Me</button></a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
+    <!-- end desktop menu -->
+
+    <!-- start mobile menu -->
+    <header>
+        <nav id="offcanvas-nav" uk-offcanvas="overlay: true">
+            <div class="uk-offcanvas-bar bg-gradient">
+                <ul class="uk-nav uk-nav-default uk-padding-large">
+                    <li><a href="#contact"><button id="nav-button" class="uk-button uk-button-default text-white">services</button></a></li>
+                    <li><a href="#projects"><button id="nav-button" class="uk-button uk-button-default text-white">projects</button></a></li>
+                    <li><a href="#contact"><button id="nav-button" class="uk-button uk-button-default text-white">Contact Me</button></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- end mobile menu -->
 
     <section>
       <div id="hero">
@@ -68,6 +64,9 @@
               <div class="uk-container uk-container-small">
                   <h1 class="text-bold"> Hi, I'm Valeria de León </h1>
                   <h2 class="text-light" >A multidisciplinary designer, focused in UI/UX web design and passionate in product development.</h2>
+              </div>
+              <div class="uk-text-center">
+                <span><a href="#services" uk-icon="icon: chevron-down; ratio: 3" title="go down"></a></span>
               </div>
           </div>
       </div>
@@ -540,25 +539,29 @@
       <footer id="contact" class="uk-section uk-section-primary uk-preserve-color" style="background-color: #f5f5f5; " >
           <sectionclass="uk-container uk-container-small">
               <h1 class="uk-heading-primary uk-text-center heading-section">Contact</h1>
-              <div class="uk-grid-match uk-text-center uk-child-width-1-5@m" uk-grid>
+              <div class="uk-grid-match uk-text-center uk-child-width-1-6@m" uk-grid>
                   <div class="uk-dark">
-                     <a href="https://www.behance.net/Valerydeleon" target="_blank" class="uk-icon-link " uk-icon="icon: behance; ratio: 2"></a>
+                     <a href="https://www.behance.net/Valerydeleon" target="_blank" class="uk-icon-link " uk-icon="icon: behance; ratio: 2" title="behance"></a>
                      <span>Behance</span>
                   </div>
                   <div>
-                     <a href="https://www.linkedin.com/in/valeriadeleong/" target="_blank" class="uk-icon-link " uk-icon="icon: linkedin; ratio: 2"></a>
+                     <a href="https://www.linkedin.com/in/valeriadeleong/" target="_blank" class="uk-icon-link " uk-icon="icon: linkedin; ratio: 2" title="linkedin"></a>
                      <span>Linkedin</span>
                   </div>
                   <div>
-                     <a href="https://github.com/valerydeleon" target="_blank" class="uk-icon-link " uk-icon="icon: github-alt; ratio: 2"></a>
+                     <a href="https://github.com/valerydeleon" target="_blank" class="uk-icon-link " uk-icon="icon: github-alt; ratio: 2" title="github"></a>
                      <span>GitHub</span>
+                  </div>
+                  <div>
+                     <a target="_blank" href="assets/docs/cv_valeriadeleon.pdf" class="uk-icon-link " uk-icon="icon: download; ratio: 2" title="download cv"></a>
+                     <span>Get my Resume</span>
                   </div>
                   <div>
                      <a href="mailto:valery.deleon@gmail.com" class="uk-icon-link " uk-icon="icon: mail; ratio: 2" title="email me"></a>
                      <span>valery.deleon@gmail.com</span>
                   </div>
                   <div>
-                     <a class="uk-icon-link " uk-icon="icon: phone; ratio: 2" href="tel:5543656168" ></a>
+                     <a class="uk-icon-link " uk-icon="icon: phone; ratio: 2" href="tel:5543656168" title="call me"></a>
                      <span>55.43.65.61.68</span>
                   </div>
               </div>
