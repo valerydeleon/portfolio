@@ -15,66 +15,86 @@
   </head>
   <body>
 
-    <header class="uk-position-relative">
-          <div id="hero">
-              <div class="header">
-                  <div class="logo-hero uk-margin-medium-bottom">
-                      <img src="assets/img/logo_white.png" alt="">
-                  </div>
-                  <div class="uk-container uk-container-small">
-                      <h1 class="text-bold"> Hi, I'm Valeria de León </h1>
-                      <h2 class="text-light" >A multidisciplinary designer, focused in UI/UX web design and passionate in product development.</h2>
-                  </div>
+    <header id="nav-container">
+
+      <!-- <div class="uk-offcanvas-content">
+          <button uk-navbar-toggle-icon uk-toggle="target: #offcanvas-nav; mode: media; media: @1"><span class="uk-margin-small-right">Menu</span></button>
+          <div id="offcanvas-nav" uk-offcanvas="flip: true">
+              <div class="uk-offcanvas-bar">
+                <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+                  <li class="uk-active" ><a href="#">SERVICES</a></li>
+                  <li class="uk-active"><a href="#">PROJECTS</a></li>
+                  <li class="uk-active"><a href="#">CONTACT ME</a></li>
+                </ul>
               </div>
           </div>
-          <div class="uk-position-top">
-              <nav id="nav-bar" class="uk-navbar-container uk-navbar-transparent" uk-navbar uk-sticky uk-toggle="target: #toggle-custom; cls: uk-card-primary">
+      </div> -->
+
+      <nav>
+        <ul>
+          <li class="nav-bar-left "><a id="nav-link-services" href="#services">SERVICES</a></li>
+          <li class="nav-bar-left "><a id="nav-link-projects"href="#projects">PROJECTS</a></li>
+          <li class="nav-bar-right nav-button"><a href="#contact"><button id="nav-button" class="uk-button">Contact Me</button></a></li>
+        </ul>
+      </nav>
+
+
+          <!-- <div class="uk-position-top">
+              <nav id="nav-container" class="uk-navbar-container uk-navbar-transparent text-blue" uk-navbar uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky;">
                   <div class="uk-navbar-left">
                       <ul class="uk-navbar-nav">
-                          <li class="uk-active text-white"><a class="enlace" href="#services">Services</a></li>
-                          <li class="uk-active text-white"><a href="#projects">Projects</a></li>
+                          <li class="nav-link"><a href="#services">Services</a></li>
+                          <li class="nav-link"><a href="#projects">Projects</a></li>
                       </ul>
                   </div>
                   <div class="uk-navbar-center">
-                      <!-- <a class="uk-navbar-item uk-logo" href="#">Logo</a> -->
+                       <a class="uk-navbar-item uk-logo" href="#">Logo</a>
                   </div>
                   <div class="uk-navbar-right">
                       <ul class="uk-navbar-nav">
-                          <li class="uk-active"><a href="#contact"><button class="uk-button uk-button-default text-white">Contact Me</button></a></li>
+                          <li><a href="#contact"><button id="nav-button" class="uk-button uk-button-default text-white">Contact Me</button></a></li>
                       </ul>
                   </div>
               </nav>
-          </div>
+          </div> -->
     </header>
 
-
-
+    <section>
+      <div id="hero">
+          <div class="header">
+              <div class="logo-hero uk-margin-medium-bottom">
+                  <img class="hero-logo" src="assets/img/logo_white.png" alt="logo">
+              </div>
+              <div class="uk-container uk-container-small">
+                  <h1 class="text-bold"> Hi, I'm Valeria de León </h1>
+                  <h2 class="text-light" >A multidisciplinary designer, focused in UI/UX web design and passionate in product development.</h2>
+              </div>
+          </div>
+      </div>
+    </section>
 
       <!-- Start Services -->
       <section  id="services" class="uk-section uk-section-default" style="background-color: #f5f5f5; ">
           <h1 class="uk-heading-primary uk-text-center uk-margin-medium-bottom heading-section">Services</h1>
           <div class="uk-container">
               <div class="uk-grid-match uk-child-width-1-3@m uk-margin-small" uk-grid>
-
-                  <div>
-                      <div class="uk-card" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
-                          <div class="uk-card-media-top">
-                              <img class="icon uk-align-center uk-margin-small-bottom" src="assets/img/pencil_icon.png" alt="">
-                          </div>
-                          <div class="uk-card-body">
-                              <h3 class="uk-card-title title-text">Design</h3>
-                              <ul class="uk-list uk-margin-small">
-                                <li>UI & UX Design</li>
-                                <li>Website Development</li>
-                              </ul>
-                          </div>
+                  <div class="uk-card" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+                      <div class="uk-card-media-top">
+                          <img class="icon uk-align-center uk-margin-small-bottom" src="assets/img/pencil_icon.png" alt="design_icon">
+                      </div>
+                      <div class="uk-card-body">
+                          <h3 class="uk-card-title title-text">Design</h3>
+                          <ul class="uk-list uk-margin-small">
+                            <li>UI & UX Design</li>
+                            <li>Website Development</li>
+                          </ul>
                       </div>
                   </div>
 
                   <div>
                       <div class="uk-card" uk-scrollspy="cls: uk-animation-slide-top; repeat: true">
                           <div class="uk-card-media-top">
-                              <img class="icon uk-align-center uk-margin-small-bottom" src="assets/img/strategy_icon.png" alt="">
+                              <img class="icon uk-align-center uk-margin-small-bottom" src="assets/img/strategy_icon.png" alt="strategy_icon">
                           </div>
                           <div class="uk-card-body">
                               <h3 class="uk-card-title title-text">Strategy</h3>
@@ -89,7 +109,7 @@
                   <div>
                       <div class="uk-card" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
                           <div class="uk-card-media-top">
-                              <img class="icon uk-align-center uk-margin-small-bottom" src="assets/img/creative_icon.png" alt="">
+                              <img class="icon uk-align-center uk-margin-small-bottom" src="assets/img/creative_icon.png" alt="creative_icon">
                           </div>
                           <div class="uk-card-body">
                               <h3 class="uk-card-title title-text">Creative</h3>
@@ -124,7 +144,7 @@
                         <div class="uk-card uk-card-body uk-padding-remove">
                             <div class="uk-text-center">
                                 <div class="uk-inline-clip uk-transition-toggle">
-                                    <img src="assets/img/cool-places/lugares_cool.jpg" alt="">
+                                    <img src="assets/img/cool-places/lugares_cool.jpg" alt="cool_places">
                                     <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
                                         <p class="uk-h4 uk-margin-remove">School Project - Lugares Cool</p>
                                     </div>
@@ -157,7 +177,7 @@
               </div>
       <!-- body modal -->
               <div class="uk-modal-body" uk-overflow-auto>
-                <img src="assets/img/cool-places/responsive_CoolPlaces.png" alt="">
+                <img src="assets/img/cool-places/responsive_CoolPlaces.png" alt="mock_cool_places">
               </div>
       <!-- footer modal -->
               <div class="uk-modal-footer uk-text-center">
@@ -189,7 +209,7 @@
                         <div class="uk-card uk-card-body uk-padding-remove">
                             <div class="uk-text-center">
                                 <div class="uk-inline-clip uk-transition-toggle">
-                                    <img src="assets/img/basf/basf_logo.jpg" alt="">
+                                    <img src="assets/img/basf/basf_logo.jpg" alt="basf_logo">
                                     <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
                                         <p class="uk-h4 uk-margin-remove">BASF The Chemical Company</p>
                                     </div>
@@ -209,7 +229,7 @@
               <button class="uk-modal-close-full uk-close-large close-full" type="button" uk-close></button>
               <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
                   <div class="uk-background-cover modal-full-bg uk-align-center" uk-height-viewport>
-                      <img class="modal-full-img" src="assets/img/basf/basf_mockup.jpg" alt="">
+                      <img class="modal-full-img" src="assets/img/basf/basf_mockup.jpg" alt="basf_mockup">
                   </div>
                   <div class="uk-padding-large">
                       <div class="modal-full-header uk-text-center">
@@ -258,7 +278,7 @@
                       <div class="uk-card uk-card-body uk-padding-remove">
                           <div class="uk-text-center">
                               <div class="uk-inline-clip uk-transition-toggle">
-                                  <img src="assets/img/elbrayan_logo.jpg" alt="">
+                                  <img src="assets/img/elbrayan_logo.jpg" alt="elbrayan_logo">
                                   <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
                                       <p class="uk-h4 uk-margin-remove">El Brayan!</p>
                                   </div>
@@ -288,7 +308,7 @@
               </div>
       <!-- body modal -->
               <div class="uk-modal-body" uk-overflow-auto>
-                <img src="assets/img/elbrayan/branding_brayan.jpg" alt="">
+                <img src="assets/img/elbrayan/branding_brayan.jpg" alt="elbrayan_branding">
               </div>
       <!-- footer modal -->
               <div class="uk-modal-footer uk-text-center">
@@ -321,7 +341,7 @@
                       <div class="uk-card uk-card-body uk-padding-remove">
                           <div class="uk-text-center">
                               <div class="uk-inline-clip uk-transition-toggle">
-                                  <img src="assets/img/lyft/lyft_web_mockup.jpg" alt="">
+                                  <img src="assets/img/lyft/lyft_web_mockup.jpg" alt="lyft_mockup">
                                   <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
                                       <p class="uk-h4 uk-margin-remove">School Project - Lyft</p>
                                   </div>
@@ -353,7 +373,7 @@
               </div>
       <!-- body modal -->
               <div class="uk-modal-body" uk-overflow-auto>
-                <img src="assets/img/lyft/lyft_web.png" alt="">
+                <img src="assets/img/lyft/lyft_web.png" alt="lyft_web_mockup">
               </div>
       <!-- footer modal -->
               <div class="uk-modal-footer uk-text-center">
@@ -377,13 +397,14 @@
 
 
       <!-- Five --><div class="uk-margin-large-bottom">
+                      <a class="link-href" href="#modal-full-wyndham" uk-toggle>
                       <div class="uk-card uk-card-header uk-card-title uk-padding-remove-vertical">
                           <p class="text-white">Strategy</p>
                       </div>
                       <div class="uk-card uk-card-body uk-padding-remove">
                           <div class="uk-text-center">
                               <div class="uk-inline-clip uk-transition-toggle">
-                                  <img src="assets/img/wyndham_chevron.jpg" alt="">
+                                  <img src="assets/img/wyndham_chevron.jpg" alt="wyndham_logo">
                                   <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
                                       <p class="uk-h4 uk-margin-remove">Wyndham Hotel Group</p>
                                   </div>
@@ -393,7 +414,54 @@
                       <div class="uk-card uk-card-footer uk-padding-remove-vertical">
                           <p class="text-light">Media planning and creative strategies.</p>
                       </div>
+                    </a>
       <!-- Five --></div>
+
+      <!-- Inicia Modal Five -->
+      <!-- <a class="uk-button uk-button-default" href="#modal-full" uk-toggle>Open</a> -->
+      <div id="modal-full-wyndham" class="uk-modal-full" uk-modal>
+          <div class="uk-modal-dialog">
+              <button class="uk-modal-close-full uk-close-large close-full" type="button" uk-close></button>
+              <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+                  <div class="uk-background-cover modal-full-bg uk-align-center" uk-height-viewport>
+                      <img id="wyndham-img" class="modal-full-img" src="assets/img/wyndham/mock_wyndham.png" alt="wyndham_mockup">
+                  </div>
+                  <div class="uk-padding-large">
+                      <div class="modal-full-header uk-text-center">
+                          <h2 class="uk-modal-title uk-text-bold modal-full-title">Wyndham Hotel Group</h2>
+                          <p class="uk-text-lead modal-full-text-lead">Media planning and creative strategies.</p>
+                          <ul class="uk-text-small uk-align-center container-list">
+                              <li class="uk-text-uppercase info-list-style modal-full-list">role <span class="uk-text-bold uk-text-capitalize">designer, Marketer and Communicator.<span></span></span></li>
+                              <li class="uk-text-uppercase info-list-style modal-full-list">context <span class="uk-text-bold uk-text-capitalize">side project<span></span></span></li>
+                              <li class="uk-text-uppercase info-list-style modal-full-list">date <span class="uk-text-bold uk-text-capitalize">march 16<span></span></span></li>
+                              <li class="uk-text-uppercase modal-full-list">format <span class="uk-text-bold uk-text-capitalize">print & digital<span></span></span></li>
+                          </ul>
+                      </div>
+
+                      <div class="uk-text-center">
+                          <h4 class="modal-title modal-full-subtitle">Tools & Skills</h4>
+                          <div class="">
+                              <ul class="uk-text-small uk-align-center container-list">
+                                  <li class="uk-text-uppercase modal-full-list-skills">Design</li>
+                                  <li class="uk-text-uppercase modal-full-list-skills">Marketing</li>
+                                  <li class="uk-text-uppercase modal-full-list-skills">Strategy</li>
+                                  <li class="uk-text-uppercase modal-full-list-skills">Communication</li>
+                                  <li class="uk-text-uppercase modal-full-list-skills">PR</li>
+                                  <li class="uk-text-uppercase uk-text-small">Project management</li>
+                                  <li class="uk-text-uppercase modal-full-list-skills">Media Negotiation</li>
+                                  <li class="uk-text-uppercase modal-full-list-skills">Illustrator</li>
+                                  <li class="uk-text-uppercase modal-full-list-skills">Photoshop</li>
+                                  <li class="uk-text-uppercase modal-full-list-skills">Indesign</li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- Termina Modal Five-->
+
+
       <!-- Six --><div class="uk-margin-large-bottom">
                     <a class="link-href" href="#modal-overflow-illustration" uk-toggle>
                     <!-- <a class="link-href" href="https://www.behance.net/gallery/45253001/medical-illustration" target="_blank"> -->
@@ -403,7 +471,7 @@
                       <div class="uk-card uk-card-body uk-padding-remove">
                           <div class="uk-text-center">
                               <div class="uk-inline-clip uk-transition-toggle">
-                                  <img src="assets/img/ilustracion.jpg" alt="">
+                                  <img src="assets/img/ilustracion.jpg" alt="medical_ilustration">
                                   <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
                                       <p class="uk-h4 uk-margin-remove">Editorial Médica Panamericana</p>
                                   </div>
@@ -435,15 +503,15 @@
               </div>
       <!-- body modal -->
               <div class="uk-modal-body" uk-overflow-auto>
-                <img src="assets/img/illustration/collage_ilustration.jpg" alt="">
-                <img src="assets/img/illustration/heart.jpg" alt="">
-                <img src="assets/img/illustration/ear.jpg" alt="">
-                <img src="assets/img/illustration/bone.jpg" alt="">
-                <img src="assets/img/illustration/stomach.jpg" alt="">
-                <img src="assets/img/illustration/epitellus.jpg" alt="">
-                <img src="assets/img/illustration/digestive_system.jpg" alt="">
-                <img src="assets/img/illustration/veins.jpg" alt="">
-                <img src="assets/img/illustration/nerves.jpg" alt="">
+                <img src="assets/img/illustration/collage_ilustration.jpg" alt="emp_collage">
+                <img src="assets/img/illustration/heart.jpg" alt="emp_heart">
+                <img src="assets/img/illustration/ear.jpg" alt="emp_ear">
+                <img src="assets/img/illustration/bone.jpg" alt="emp_bone">
+                <img src="assets/img/illustration/stomach.jpg" alt="emp_stomach">
+                <img src="assets/img/illustration/epitellus.jpg" alt="emp_epitellus">
+                <img src="assets/img/illustration/digestive_system.jpg" alt="emp_digestive_system">
+                <img src="assets/img/illustration/veins.jpg" alt="emp_venis">
+                <img src="assets/img/illustration/nerves.jpg" alt="emp_nerves">
               </div>
       <!-- footer modal -->
               <div class="uk-modal-footer uk-text-center">
